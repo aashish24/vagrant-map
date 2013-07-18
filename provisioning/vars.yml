@@ -9,8 +9,10 @@ databases:
   - name: routng
     template: template_routing
 
+prime_db_import:
+  - host: http://osm-extracted-metros.s3.amazonaws.com
+    file: krakow.osm.pbf
+
 db_imports:
   - host: http://osm-extracted-metros.s3.amazonaws.com
     file: new-york.osm.pbf
-  - host: http://osm-extracted-metros.s3.amazonaws.com
-    file: krakow.osm.pbf
